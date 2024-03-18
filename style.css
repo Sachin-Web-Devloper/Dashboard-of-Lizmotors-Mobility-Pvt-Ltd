@@ -1,0 +1,87 @@
+header {
+   
+    background-color: darkcyan;
+    color: white;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    
+}
+#timeline {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+margin-top: 30px;
+}
+
+.phase {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 100px 0;
+position: relative;
+width: 180px;
+height: 180px;
+border-radius: 10%;
+background-color: #f1c40f;
+transition: width 0.3s, height 0.3s;
+margin-left: 80px;
+box-shadow: 10px 10px 10px rgb(57, 57, 57);
+}
+
+.phase:hover {
+width: 140px;
+height: 140px;
+}
+
+.title {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 14px;
+font-weight: bold;
+}
+
+.details {
+display: none;
+position: absolute;
+top: 100%;
+left: -10px;
+width: 160px;
+padding: 10px;
+background-color: #4f0ff193;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.phase:hover .details {
+display: block;
+}
+
+.detail {
+padding: 5px 0;
+font-size: 12px;
+cursor: pointer;
+}
+
+.detail:hover {
+color: #fff;
+background-color: rgb(0, 134, 123);
+border-radius: 5px;
+}
+footer , p {
+text-align: center;
+    background-color: darkcyan;
+    color: white;
+    height: 30px;
+    padding: 8px;
+    border-radius: 4px;
+    position: sticky;
+}
